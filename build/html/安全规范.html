@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4. 安全规范 &mdash; JAKA MiniCab Lite硬件用户手册 V01 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=25fe8c91" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=25fe8c91" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=1229c742"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=540d3cec"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="5. 系统概述" href="%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0.html" />
+    <link rel="prev" title="3. 手册概述" href="%E6%89%8B%E5%86%8C%E6%A6%82%E8%BF%B0.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            JAKA MiniCab Lite硬件用户手册
+              <img src="_static/Logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E.html">1. 声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E4%BA%A7%E5%93%81%E6%B8%85%E5%8D%95.html">2. 产品清单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%89%8B%E5%86%8C%E6%A6%82%E8%BF%B0.html">3. 手册概述</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. 安全规范</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">4.1. 简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">4.2. 安全警告标志说明</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">4.3. 警告及提醒</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">4.4. 责任与风险</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#esd">4.5. 受ESD影响</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">4.6. 标签及位置</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0.html">5. 系统概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%8A%80%E6%9C%AF%E8%A7%84%E6%A0%BC.html">6. 技术规格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%AE%89%E8%A3%85.html">7. 安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html">8. 电气连接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%B4%A8%E9%87%8F%E4%BF%9D%E9%9A%9C.html">9. 质量保证</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JAKA MiniCab Lite硬件用户手册</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4. </span>安全规范</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<span id="id2"></span><h1><span class="section-number">4. </span>安全规范<a class="headerlink" href="#id1" title="链接到此标题。"></a></h1>
+<section id="id3">
+<h2><span class="section-number">4.1. </span>简介<a class="headerlink" href="#id3" title="链接到此标题。"></a></h2>
+<p>本章主要介绍了使用机器人或机器人系统时应遵守的安全原则和规范。用户应仔细阅读本手册的安全方面相关内容，并严格遵守。操作人员应充分认识到机器人系统的复杂性和危险性，应特别注意与警告标志相关的内容。</p>
+</section>
+<section id="id4">
+<h2><span class="section-number">4.2. </span>安全警告标志说明<a class="headerlink" href="#id4" title="链接到此标题。"></a></h2>
+<p>本手册的危险等级规定使用如下警示标志进行说明，有关安全的内容，请严格遵守。</p>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-number">表 4.1 </span><span class="caption-text">安全标识说明</span><a class="headerlink" href="#id10" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>标识</strong></p></th>
+<th class="head"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>警告：带电</strong></p></td>
+<td><p>这个标志表示可能引发危险的用电情况，若不避免，可导致人员伤害或设备严重损坏。</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>警告</strong></p></td>
+<td><p>这个标志表示可能引发危险的情况，若不避免，可导致人员伤害或设备严重损坏。</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>警告：热表面</strong></p></td>
+<td><p>这个标志表示可能引发危险的热表面，若接触，可造成人员伤害。</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>注意</strong></p></td>
+<td><p>这个标志表示重要事实和状况。</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>备注</strong></p></td>
+<td><p>此标志用于说明附加信息。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<h2><span class="section-number">4.3. </span>警告及提醒<a class="headerlink" href="#id5" title="链接到此标题。"></a></h2>
+<p>本节主要为保护操作人员以及在第一次安装时需要注意的相关事项。用户需要仔细阅读本手册的安全警告事项，但是有很多的可能性存在，很多事项描述不可能面面俱到，我们尽可能描述各种情况。</p>
+<table class="longtable docutils align-default" id="id11">
+<caption><span class="caption-number">表 4.2 </span><span class="caption-text">通用警告</span><a class="headerlink" href="#id11" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>标识</strong></p></th>
+<th class="head"><p><strong>说明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/触电.png"><img alt="警告：带电" src="_images/%E8%A7%A6%E7%94%B5.png" style="width: 1.5cm;" />
+</a>
+</figure>
+</td>
+<td><p><strong>警告：带电</strong></p>
+<ul class="simple">
+<li><p>必须按照本手册中的说明和警告安装机器人和所有电气设备。</p></li>
+<li><p>接触带电电气部件存在遭电击的危险，请勿在机器人通电时触摸其内部任何组件。</p></li>
+<li><p>应确保在安全、干燥、通风的环境中充电，避免靠近可燃物或高温区域。</p></li>
+<li><p>请勿使用非原装电缆。使用机器人时，请勿弯折电缆。</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/危险.png"><img alt="警告" src="_images/%E5%8D%B1%E9%99%A9.png" style="width: 1.5cm;" />
+</a>
+</figure>
+</td>
+<td><p><strong>警告：</strong></p>
+<ul class="simple">
+<li><p>机器人参数的设置和更改须由有许可的人员进行，并防止未授权的人员更改参数。</p></li>
+<li><p>确保所有操作员都接受了机器人使用的相关培训，了解如何正确操作和应对突发情况，防止因误操作引发的意外。</p></li>
+<li><p>初次使用时，需要对机器人的防护系统、设备和系统的完整性，以及操作的安全性进行检查，以确保没有任何损伤。</p></li>
+<li><p>禁止在机器人运行或带电状态下擅自拆卸、调整或维修设备，以免引发进一步损坏或安全风险。</p></li>
+<li><p>控制柜使用直流电压输入，请规范使用直流电源，使用电池供电时，需要考虑电池带来的相关风险。</p></li>
+<li><p>切勿将安全设备连接到普通的I/O接口上，以免造成伤害；应将其连接到安全I/O接口上。</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="_images/热表面.png"><img alt="警告：热表面" src="_images/%E7%83%AD%E8%A1%A8%E9%9D%A2.png" style="width: 1.5cm;" />
+</a>
+</td>
+<td><p><strong>警告：热表面</strong></p>
+<ul class="simple">
+<li><p>控制柜在工作时会产生热量，刚停止工作时不要触碰，断电1小时左右才可触碰。</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id6">
+<h2><span class="section-number">4.4. </span>责任与风险<a class="headerlink" href="#id6" title="链接到此标题。"></a></h2>
+<p><strong>责任</strong></p>
+<p>该手册信息不涉及如何设计、安装及操作机器人的所有应用，也不涉及所有可能对机器人系统的安全造成影响的周边设备。</p>
+<p>JAKA机器人的使用者有责任确保遵循相关的切实可行的国家法律法规，确保完整的机器人应用中不存在任何重大危险。</p>
+<p>该手册包含的所有安全方面的信息都不得视为JAKA的保证，即使遵守所有的安全指示，操作人员所造成的伤害或损害依然有可能发生。</p>
+<p>JAKA会不断致力于提升本公司机器人的性能以及可靠性，本公司对本手册中存在的错误或者遗漏的信息概不负责，并且保留对本手册的最终解释权。</p>
+<p><strong>风险</strong></p>
+<p>在操作人员与机器人之间存在交互关系时就必然存在直接或者间接的肢体接触关系。接触时必须有足够的自我保护意识，使用者在使用本公司机器人时需要谨慎考虑使用工况。以下为可能出现的危险情况：</p>
+<ul class="simple">
+<li><p>搬运时机器人掉落砸伤人员的情况；</p></li>
+<li><p>由于机器人固定螺钉或螺栓松动导致伤人的情况；</p></li>
+<li><p>机器人工作时出现夹伤手指、碰撞伤人的情况；</p></li>
+<li><p>机器人出现故障没有及时修理而出现的伤人情况；</p></li>
+<li><p>使用尖锐末端执行器或工具连接端时可能存在危险的情况；</p></li>
+<li><p>机器人在有毒或者腐蚀性的环境中运转时存在伤人的情况；</p></li>
+<li><p>机器人在强磁场环境中的情况。</p></li>
+</ul>
+</section>
+<section id="esd">
+<span id="id7"></span><h2><span class="section-number">4.5. </span>受ESD影响<a class="headerlink" href="#esd" title="链接到此标题。"></a></h2>
+<p>ESD（静电放电）是电势不同的两个物体间的静电传导，它可以通过直接接触传导，也可以通过感应电场传导。搬运部件或其容器时，未接地的人员可能会传导大量的静电荷。这一放电过程可能会损坏灵敏的电子装置。</p>
+<p>使用下列任一方案预防上述现象：</p>
+<ul class="simple">
+<li><p>使用腕带。腕带必须经常检查以确保没有损坏并且要正确使用。</p></li>
+<li><p>使用 ESD保护地垫。地垫必须通过限流电阻接地。</p></li>
+<li><p>使用防静电桌垫。此垫应能控制静电放电且必须接地。</p></li>
+</ul>
+</section>
+<section id="id8">
+<span id="id9"></span><h2><span class="section-number">4.6. </span>标签及位置<a class="headerlink" href="#id8" title="链接到此标题。"></a></h2>
+<p>下图为 MiniCab Lite 的铭牌位置示意。操作时请务必遵守标签上的说明和警告，以确保安全。请不要随意撕毁标签，小心处理贴有标签的部件或装置以及附近区域，以免损坏标签。标签仅作为示意。</p>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="_images/铭牌位置.png"><img alt="_images/%E9%93%AD%E7%89%8C%E4%BD%8D%E7%BD%AE.png" src="_images/%E9%93%AD%E7%89%8C%E4%BD%8D%E7%BD%AE.png" style="width: 12cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 4.1 </span><span class="caption-text">铭牌位置</span><a class="headerlink" href="#id12" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id13">
+<caption><span class="caption-number">表 4.3 </span><span class="caption-text">铭牌及标签描述</span><a class="headerlink" href="#id13" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 60.0%" />
+<col style="width: 40.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>标签</strong></p></th>
+<th class="head"><p><strong>解释</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><a class="reference internal image-reference" href="_images/铭牌.svg"><img alt="_images/%E9%93%AD%E7%89%8C.svg" src="_images/%E9%93%AD%E7%89%8C.svg" style="width: 6cm;" />
+</a>
+</td>
+<td><p>MiniCab Lite 铭牌</p></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="_images/环保使用期限标识.svg"><img alt="_images/%E7%8E%AF%E4%BF%9D%E4%BD%BF%E7%94%A8%E6%9C%9F%E9%99%90%E6%A0%87%E8%AF%86.svg" src="_images/%E7%8E%AF%E4%BF%9D%E4%BD%BF%E7%94%A8%E6%9C%9F%E9%99%90%E6%A0%87%E8%AF%86.svg" style="width: 1cm;" />
+</a>
+</td>
+<td><p>环保使用期限标识</p></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="_images/阅读手册.png"><img alt="_images/%E9%98%85%E8%AF%BB%E6%89%8B%E5%86%8C.png" src="_images/%E9%98%85%E8%AF%BB%E6%89%8B%E5%86%8C.png" style="width: 1cm;" />
+</a>
+</td>
+<td><p>必须阅读说明书</p></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="_images/热表面.png"><img alt="_images/%E7%83%AD%E8%A1%A8%E9%9D%A2.png" src="_images/%E7%83%AD%E8%A1%A8%E9%9D%A2.png" style="width: 1cm;" />
+</a>
+</td>
+<td><p>当心高温表面</p></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal image-reference" href="_images/触电.png"><img alt="_images/%E8%A7%A6%E7%94%B5.png" src="_images/%E8%A7%A6%E7%94%B5.png" style="width: 1cm;" />
+</a>
+</td>
+<td><p>当心触电</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="%E6%89%8B%E5%86%8C%E6%A6%82%E8%BF%B0.html" class="btn btn-neutral float-left" title="3. 手册概述" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0.html" class="btn btn-neutral float-right" title="5. 系统概述" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有  2026, JAKA Robotics。</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

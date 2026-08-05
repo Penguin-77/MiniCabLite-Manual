@@ -1,0 +1,461 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6. 技术规格 &mdash; JAKA MiniCab Lite硬件用户手册 V01 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=25fe8c91" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=25fe8c91" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=1229c742"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=540d3cec"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="7. 安装" href="%E5%AE%89%E8%A3%85.html" />
+    <link rel="prev" title="5. 系统概述" href="%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            JAKA MiniCab Lite硬件用户手册
+              <img src="_static/Logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E.html">1. 声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E4%BA%A7%E5%93%81%E6%B8%85%E5%8D%95.html">2. 产品清单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%89%8B%E5%86%8C%E6%A6%82%E8%BF%B0.html">3. 手册概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%AE%89%E5%85%A8%E8%A7%84%E8%8C%83.html">4. 安全规范</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0.html">5. 系统概述</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. 技术规格</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">6.1. 技术参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">6.2. 机械规格</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">6.3. 电气规格</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">6.3.1. 电源电气规格</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-o">6.3.2. I/O接口电气规格</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">6.3.3. 典型功耗</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">6.4. 指示灯</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">6.5. 按钮</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">6.5.1. 电源按钮</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">6.6. 线路熔断</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">6.7. 剩余电流</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%AE%89%E8%A3%85.html">7. 安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html">8. 电气连接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%B4%A8%E9%87%8F%E4%BF%9D%E9%9A%9C.html">9. 质量保证</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JAKA MiniCab Lite硬件用户手册</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">6. </span>技术规格</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<span id="id2"></span><h1><span class="section-number">6. </span>技术规格<a class="headerlink" href="#id1" title="链接到此标题。"></a></h1>
+<section id="id3">
+<span id="id4"></span><h2><span class="section-number">6.1. </span>技术参数<a class="headerlink" href="#id3" title="链接到此标题。"></a></h2>
+<table class="docutils align-default" id="id22">
+<caption><span class="caption-number">表 6.1 </span><span class="caption-text">技术参数</span><a class="headerlink" href="#id22" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 20.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"></th>
+<th class="head"><p>MiniCab Lite</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="2"><p>重量（kg）</p></td>
+<td><p>1.3 kg (2.9 Ib)</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>尺寸（宽度*深度*高度）</p></td>
+<td><p>194*144*51 mm (7.6*5.7*2.0 in)</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>防护等级</p></td>
+<td><p>IP20</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>材质</p></td>
+<td><p>铝</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>电压</p></td>
+<td><p>48V DC</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><p>通讯方式</p></td>
+<td><p>网口</p></td>
+<td><p>2*Ethernet（千兆）</p></td>
+</tr>
+<tr class="row-even"><td><p>工业协议</p></td>
+<td><p>TCP/IP，Modbus TCP，Modbus RTU，PROFINET，Ethernet/IP</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>I/O端口</p></td>
+<td><p>8路数字输入、8路数字输出</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>I/O电源</p></td>
+<td><p>24 VDC</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>环境温度</p></td>
+<td><p>0-50℃（32-122℉）</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>环境湿度</p></td>
+<td><p>10-90%RH</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>海拔</p></td>
+<td><p>≤1000 m (39370 in)</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>大气压</p></td>
+<td><p>1 Bar</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<span id="id6"></span><h2><span class="section-number">6.2. </span>机械规格<a class="headerlink" href="#id5" title="链接到此标题。"></a></h2>
+<p>MiniCab Lite 外形尺寸图如下。</p>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="_images/MiniCabLite外形尺寸图.svg"><img alt="_images/MiniCabLite%E5%A4%96%E5%BD%A2%E5%B0%BA%E5%AF%B8%E5%9B%BE.svg" src="_images/MiniCabLite%E5%A4%96%E5%BD%A2%E5%B0%BA%E5%AF%B8%E5%9B%BE.svg" style="width: 20cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 6.1 </span><span class="caption-text">外形尺寸图</span><a class="headerlink" href="#id23" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id7">
+<span id="id8"></span><h2><span class="section-number">6.3. </span>电气规格<a class="headerlink" href="#id7" title="链接到此标题。"></a></h2>
+<p>本章主要介绍 MiniCab Lite 接口和线束的电气规格和参数。</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>在使用 MiniCab Lite 时，务必按照推荐的电气参数使用，达到或者超过极限参数可能会造成控制柜硬件损坏。</p>
+</div>
+<section id="id9">
+<h3><span class="section-number">6.3.1. </span>电源电气规格<a class="headerlink" href="#id9" title="链接到此标题。"></a></h3>
+<p>MiniCab Lite 电气参数如下：</p>
+<table class="docutils align-default" id="id24">
+<caption><span class="caption-number">表 6.2 </span><span class="caption-text">MiniCab Lite 电气规格</span><a class="headerlink" href="#id24" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>MiniCab Lite</p></th>
+<th class="head"><p><strong>最小值</strong></p></th>
+<th class="head"><p><strong>典型值</strong></p></th>
+<th class="head"><p><strong>最大值</strong></p></th>
+<th class="head"><p><strong>单位</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>电源输入</p></td>
+<td><p>20</p></td>
+<td><p>48</p></td>
+<td><p>60</p></td>
+<td><p>VDC</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="i-o">
+<span id="id10"></span><h3><span class="section-number">6.3.2. </span>I/O接口电气规格<a class="headerlink" href="#i-o" title="链接到此标题。"></a></h3>
+<p>数字输入和输出的设计遵循 IEC 61131-2，支持8路的数字输入和8路的数字输出。其电气规格如下表：</p>
+<table class="docutils align-default" id="id25">
+<caption><span class="caption-number">表 6.3 </span><span class="caption-text">数字输入接口电气规格</span><a class="headerlink" href="#id25" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><strong>最小值</strong></p></th>
+<th class="head"><p><strong>典型值</strong></p></th>
+<th class="head"><p><strong>最大值</strong></p></th>
+<th class="head"><p><strong>单位</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>电压</p></td>
+<td><p>15</p></td>
+<td><p>24</p></td>
+<td><p>30</p></td>
+<td><p>V</p></td>
+</tr>
+<tr class="row-odd"><td><p>电流</p></td>
+<td><p>0.5</p></td>
+<td><p>2</p></td>
+<td><p>2.5</p></td>
+<td><p>mA</p></td>
+</tr>
+<tr class="row-even"><td><p>OFF区域</p></td>
+<td><p>-3</p></td>
+<td><p>0</p></td>
+<td><p>8</p></td>
+<td><p>V</p></td>
+</tr>
+<tr class="row-odd"><td><p>ON区域</p></td>
+<td><p>15</p></td>
+<td><p>24</p></td>
+<td><p>30</p></td>
+<td><p>V</p></td>
+</tr>
+<tr class="row-even"><td><p>功能</p></td>
+<td><p>/</p></td>
+<td><p>NPN</p></td>
+<td><p>/</p></td>
+<td><p>类型</p></td>
+</tr>
+<tr class="row-odd"><td><p>IEC 61131-2</p></td>
+<td><p>/</p></td>
+<td><p>Type1</p></td>
+<td><p>/</p></td>
+<td><p>类型</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="id26">
+<caption><span class="caption-number">表 6.4 </span><span class="caption-text">数字输出接口电气规格</span><a class="headerlink" href="#id26" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><strong>典型值</strong></p></th>
+<th class="head"><p><strong>单位</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>单通道电流</p></td>
+<td><p>0.5</p></td>
+<td><p>A</p></td>
+</tr>
+<tr class="row-odd"><td><p>电压降</p></td>
+<td><p>1.8</p></td>
+<td><p>V</p></td>
+</tr>
+<tr class="row-even"><td><p>漏电流</p></td>
+<td><p>0.5</p></td>
+<td><p>mA</p></td>
+</tr>
+<tr class="row-odd"><td><p>功能</p></td>
+<td><p>NPN</p></td>
+<td><p>类型</p></td>
+</tr>
+<tr class="row-even"><td><p>IEC 61131-2</p></td>
+<td><p>Type1</p></td>
+<td><p>类型</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id11">
+<h3><span class="section-number">6.3.3. </span>典型功耗<a class="headerlink" href="#id11" title="链接到此标题。"></a></h3>
+<p>MiniCab Lite 典型功耗：</p>
+<table class="docutils align-default" id="id27">
+<caption><span class="caption-number">表 6.5 </span><span class="caption-text">MiniCab Lite 典型功耗</span><a class="headerlink" href="#id27" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>参数</strong></p></th>
+<th class="head"><p><strong>数值</strong></p></th>
+<th class="head"><p><strong>单位</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>待机功耗</p></td>
+<td><p>9</p></td>
+<td><p>W</p></td>
+</tr>
+<tr class="row-odd"><td><p>开机功耗</p></td>
+<td><p>15</p></td>
+<td><p>W</p></td>
+</tr>
+<tr class="row-even"><td><p>机器人上电功耗</p></td>
+<td><p>24</p></td>
+<td><p>W</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id12">
+<span id="id13"></span><h2><span class="section-number">6.4. </span>指示灯<a class="headerlink" href="#id12" title="链接到此标题。"></a></h2>
+<figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="_images/指示灯位置.svg"><img alt="_images/%E6%8C%87%E7%A4%BA%E7%81%AF%E4%BD%8D%E7%BD%AE.svg" src="_images/%E6%8C%87%E7%A4%BA%E7%81%AF%E4%BD%8D%E7%BD%AE.svg" style="width: 12cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 6.2 </span><span class="caption-text">指示灯位置</span><a class="headerlink" href="#id28" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<p>MiniCab Lite 有一个指示灯，位于前面板，颜色定义如下。</p>
+<table class="docutils align-default" id="id29">
+<caption><span class="caption-number">表 6.6 </span><span class="caption-text">指示灯颜色定义</span><a class="headerlink" href="#id29" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>名称</strong></p></th>
+<th class="head"><p><strong>功能</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>电源指示灯</p></td>
+<td><p>绿色常亮：控制柜上电</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id14">
+<span id="id15"></span><h2><span class="section-number">6.5. </span>按钮<a class="headerlink" href="#id14" title="链接到此标题。"></a></h2>
+<section id="id16">
+<span id="id17"></span><h3><span class="section-number">6.5.1. </span>电源按钮<a class="headerlink" href="#id16" title="链接到此标题。"></a></h3>
+<figure class="align-center" id="id30">
+<a class="reference internal image-reference" href="_images/电源按钮位置.svg"><img alt="_images/%E7%94%B5%E6%BA%90%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE.svg" src="_images/%E7%94%B5%E6%BA%90%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE.svg" style="width: 12cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 6.3 </span><span class="caption-text">电源按钮</span><a class="headerlink" href="#id30" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<p>MiniCab Lite 电源按钮位于前面板，用于控制开关机，方式如下：</p>
+<ul class="simple">
+<li><p><strong>开机：</strong> 短按1秒电源按钮后松开，控制柜开机。</p></li>
+<li><p><strong>关机：</strong> 长按电源按钮3秒以上，控制柜关机。</p></li>
+</ul>
+</section>
+</section>
+<section id="id18">
+<span id="id19"></span><h2><span class="section-number">6.6. </span>线路熔断<a class="headerlink" href="#id18" title="链接到此标题。"></a></h2>
+<p>MiniCab Lite 无内置保险丝。需加装外置保险丝（时延型）或断路器（K类）。下表显示了外置保险丝或断路器的推荐额定值。</p>
+<table class="docutils align-default" id="id31">
+<caption><span class="caption-number">表 6.7 </span><span class="caption-text">外置保险丝规格</span><a class="headerlink" href="#id31" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 34.0%" />
+<col style="width: 33.0%" />
+<col style="width: 33.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>机器人型号</strong></p></th>
+<th class="head"><p><strong>电压等级</strong></p></th>
+<th class="head"><p><strong>推荐额定值</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MiniCobo, Mini2, Mini2C</p></td>
+<td><p>125 VDC，单相</p></td>
+<td><p>10 A</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id20">
+<span id="id21"></span><h2><span class="section-number">6.7. </span>剩余电流<a class="headerlink" href="#id20" title="链接到此标题。"></a></h2>
+<p>请根据以下控制柜剩余电流数据提供外部接地故障保护（剩余电流装置，RCD）：</p>
+<table class="docutils align-default" id="id32">
+<caption><span class="caption-number">表 6.8 </span><span class="caption-text">剩余电流</span><a class="headerlink" href="#id32" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>机器人型号</strong></p></th>
+<th class="head"><p><strong>控制柜中的剩余电流</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MiniCobo, Mini2, Mini2C</p></td>
+<td><p>＜30 mA</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0.html" class="btn btn-neutral float-left" title="5. 系统概述" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="%E5%AE%89%E8%A3%85.html" class="btn btn-neutral float-right" title="7. 安装" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有  2026, JAKA Robotics。</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
