@@ -18,11 +18,12 @@ build:
   jobs:
     post_build:
       - >-
-        find "$READTHEDOCS_OUTPUT/pdf"
-        -depth
-        -mindepth 1
-        ! -path "$READTHEDOCS_OUTPUT/pdf/JAKA MiniCab Lite硬件用户手册.pdf"
-        -delete
+        test -f "$READTHEDOCS_OUTPUT/pdf/minicablite-manual.pdf"
+        && cp "$READTHEDOCS_OUTPUT/pdf/minicablite-manual.pdf"
+        /tmp/minicablite-manual.pdf
+        && find "$READTHEDOCS_OUTPUT/pdf" -depth -mindepth 1 -delete
+        && mv /tmp/minicablite-manual.pdf
+        "$READTHEDOCS_OUTPUT/pdf/minicablite-manual.pdf"
 
 python:
   install:
