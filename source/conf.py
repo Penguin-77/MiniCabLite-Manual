@@ -73,6 +73,10 @@ html_search_options = {
     'lang': 'zh_CN'
 }
 
+html_js_files = [
+    'comments.js',
+]
+
 # 查找图片偏好
 from sphinx.builders.html import StandaloneHTMLBuilder
 StandaloneHTMLBuilder.supported_image_types = ['image/svg+xml', 'image/png', 'image/gif', 'image/jpeg']
