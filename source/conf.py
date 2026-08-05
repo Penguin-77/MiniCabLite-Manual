@@ -99,7 +99,9 @@ latex_elements = {
 
     'figure_align': 'H',
 
-    'maketitle': r'\input{cover.tex}',
+    # 使用非 .tex 扩展名，避免 Read the Docs 的 latexmk 把封面误认为
+    # 第二个主文档（latexmk + -jobname 要求构建目录中只有一个 .tex）。
+    'maketitle': r'\input{cover.inc}',
     
     # 恢复原状，去除会导致??的锚点
     'atendofbody': r'''
@@ -120,7 +122,7 @@ latex_elements = {
     \endgroup
 
     \cleardoublepage
-    \input{backcover.tex}
+    \input{backcover.inc}
     ''',
 
     'fncychap': r'\usepackage[Sonny]{fncychap}',
@@ -377,8 +379,8 @@ verbatimwithframe=false
 }
 
 latex_additional_files = [
-    '_static/cover.tex',
-    '_static/backcover.tex',
+    '_static/cover.inc',
+    '_static/backcover.inc',
     '_static/Logo.png',
     '_static/官网二维码.png',
     '_static/MiniCab Lite.png',

@@ -15,25 +15,6 @@ build:
     - latexmk
     - librsvg2-bin
 
-  jobs:
-    post_build:
-      - >-
-        PDF_FILE="$(find "$READTHEDOCS_OUTPUT/pdf"
-        -type f
-        -name "minicablite-manual.pdf"
-        -print
-        -quit)";
-        if [ -z "$PDF_FILE" ]; then
-        echo "ERROR: minicablite-manual.pdf was not found.";
-        echo "Files currently present:";
-        find "$READTHEDOCS_OUTPUT/pdf" -type f -print;
-        exit 1;
-        fi;
-        cp "$PDF_FILE" /tmp/minicablite-manual.pdf;
-        find "$READTHEDOCS_OUTPUT/pdf" -depth -mindepth 1 -delete;
-        mv /tmp/minicablite-manual.pdf
-        "$READTHEDOCS_OUTPUT/pdf/minicablite-manual.pdf"
-
 python:
   install:
     - requirements: requirements.txt
