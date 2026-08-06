@@ -3,7 +3,7 @@
 
 |product_name| 是 |company_name| 推出的基于宽电压直流供电、体积小巧的机器人控制柜。可集成到AGV、复合机器人等移动平台、并支持密集部署。
 
-|product_name| 可搭配MiniCobo、Mini2和Mini2C机器人使用。
+|product_name| 可搭配Mini2C机器人使用。
 
 
 
@@ -22,4 +22,6 @@
    安装.rst
    电气连接.rst
    质量保障.rst
+
+
 

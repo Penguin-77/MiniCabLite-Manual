@@ -8,11 +8,7 @@
 适配关系
 **********
 
-|product_name| 可搭配以下三款机器人使用：
-
-  - MiniCobo
-  - Mini2
-  - Mini2C
+|product_name| 仅可搭配Mini2C机器人使用。
 
 |product_name| 须搭配以下版本的软件：
 

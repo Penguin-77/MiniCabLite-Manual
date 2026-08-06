@@ -126,52 +126,42 @@
 推荐的电源型号如下：
 
 .. list-table:: P1电源规格
-   :widths: 34 33 33
+   :widths: 50 50
    :header-rows: 1
 
    * - 
-     - **MiniCobo**
-     - **Mini2，Mini2C**
+     - **Mini2C**
    * - 额定电压
-     - 24 VDC
      - 48 VDC
    * - 电压范围 \ :sup:`1`
-     - 20~30 VDC
      - 40~56 VDC
    * - 电流范围
-     - 0~12 A
      - 0~7 A
    * - 峰值功率
-     - 280W
      - 672W
    * - 推荐型号  \ :sup:`2`
-     - GST280A24，MW
      - HRP-300N3-48，MW
 
 .. list-table:: P2电源规格
-   :widths: 34 33 33
+   :widths: 50 50
    :header-rows: 1
 
    * - 
-     - **MiniCobo**
-     - **Mini2，Mini2C**
+     - **Mini2C**
    * - 额定电压
-     - 24 VDC
      - 48 VDC
    * - 电压范围 \ :sup:`1`
-     - 20~30 VDC
      - 40~56 VDC
    * - 典型功率
      - 12W
-     - 12W
    * - 最大功率
-     - ≤30W
      - ≤30W
 
 .. container:: table-notes
 
-   | :sup:`1` MiniCobo 不包含 20 V，本体 20 V 为欠压阈值；Mini2、Mini2C 不包含 30 V，机器人本体 30 V 为欠压阈值。
+   | :sup:`1` Mini2C 不包含 30 V，机器人本体 30 V 为欠压阈值。
    | :sup:`2` 此处仅为推荐电源型号，客户可选购同等规格电源；峰值功率与机器人负载和使用场景有关。
+
 .. _隔离电源连接:
 
 隔离电源连接

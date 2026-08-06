@@ -13,19 +13,6 @@
    :header-rows: 1
    :widths: 30 20 50
 
-.. _机械规格:
-
-机械规格
-**********
-
-|product_name| 外形尺寸图如下。
-
-.. figure:: ./images/MiniCabLite外形尺寸图.*
-    :align: center
-    :width: 20cm
-
-    外形尺寸图
-
 .. _电气规格:
 
 电气规格
@@ -209,7 +196,7 @@ I/O接口电气规格
    * - **机器人型号**
      - **电压等级**
      - **推荐额定值**
-   * - MiniCobo, Mini2, Mini2C
+   * - Mini2C
      - 125 VDC，单相
      - 10 A
 
@@ -226,5 +213,5 @@ I/O接口电气规格
 
    * - **机器人型号**
      - **控制柜中的剩余电流**
-   * - MiniCobo, Mini2, Mini2C
+   * - Mini2C
      - ＜30 mA
